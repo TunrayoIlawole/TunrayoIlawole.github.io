@@ -1,0 +1,93 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #00203FFF;
+    color: #ADEFD1FF;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.feedback {
+    display: none;
+}
+
+#itemInput, .btn {
+    font-size: 1rem;
+    border: 1px solid #ADEFD1FF;
+    text-transform: capitalize;
+}
+
+#itemInput {
+    width: 85%;
+    padding: 7px;
+    margin-right: -10px;
+}
+
+.btn {
+    padding: 7px 10px;
+}
+
+.btn:hover {
+    background-color: #ADEFD1FF;
+    cursor: pointer;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item-icon {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.complete-item {
+    color: #ADEFD1FF;
+}
+
+.edit-item {
+    color: #00539CFF;
+}
+
+.delete-item {
+    color: #FF0000;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.visibility {
+    opacity: 0.6;
+}
+
+.show-item {
+    display: block;
+}
+
+#clear-items {
+    margin-top: 10px;
+}

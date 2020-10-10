@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "alert feedback">
+            Write value for item
+        </div>
+
+        <form id = "itemForm">
+            <h1>To-Do List</h1>
+
+            <div class = "input-group">
+                <input type = "text" id = "itemInput" placeholder = "name...">
+                <button class = "btn" type = "submit">add item</button>
+            </div>
+        </form>
+
+        <div class = "item-container">
+            <div class = "item-list">
+                <!-- <div class = "item">
+                    <h3 class = "item-name">Gorcery</h3>
+        
+                    <div class="item-icons">
+                        <a href="#" class="complete-item item-icon"><i class="far fa-check-circle"></i></a>
+                        <a href="#" class="edit-item item-icon"><i class="far fa-edit"></i></a>
+                        <a href="#" class="delete-item item-icon"><i class="far fa-times-circle"></i></a>
+                    </div>
+                </div> -->
+            </div>
+
+            <button type = "button" class = "btn" id = "clear-items">Clear Items</button>
+            
+        </div>
+    </div>
+    
+
+
+    <script src = "app.js"></script>
+</body>
+</html>
