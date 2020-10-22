@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+header {
+    width: 100%;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-one ul, .nav-two ul {
+    display: flex;
+}
+
+.nav-one li, .nav-two li {
+    margin-right: 20px;
+}
+
+.user-btn {
+    background-color: firebrick;
+    color: #FFF;
+    font-size: 1.1rem;
+    padding: 7px;
+    border: none;
+    border-radius: 150%;
+    margin-top: -5px;
+
+}
+
+main {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image {
+    text-align: center;
+}
+
+.textarea i {
+    position: absolute;
+}
+
+.textarea {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+#icon2 {
+    right: 31%;
+}
+
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.main-btns {
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: #ededed;
+    border: none;
+}
+
+.main-btns:first-child {
+    margin-right: 10px;
+}
+
+.language {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.language ul {
+    display: flex;
+    margin-left: -30px;
+}
+
+.language li {
+    margin-right: 20px;
+}
+
+.language a {
+    color: navy;
+}
+
+footer {
+    width: 100%;
+    margin-top: 140px;
+    background-color: #ededed;
+}
+
+footer ul {
+    margin-top: 0;
+}
+
+.footer-text {
+    border-bottom: 1px solid #cccccc;
+    padding: 10px 0;
+    padding-left: 40px;
+    opacity: 0.8;
+}
