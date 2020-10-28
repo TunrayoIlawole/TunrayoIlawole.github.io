@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class = "container">
+        <div class = "top">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to create an account</p>
+        </div>
+        <hr>
+        <form id = "form">
+            <div class = "text-input">
+                <div class = "form-input">
+                    <input type = "text" id = "first-name" placeholder = "First Name" required>
+                    <small>Error message</small>
+                </div>
+    
+                <div class = "form-input">
+                    <input type = "text" id = "last-name" placeholder = "Last Name" required>
+                    <small>Error message</small>
+                </div>
+            </div>
+            
+            <div class = "form-input">
+                <input type = "email" id = "email" placeholder="Email" required>
+                <small>Error message</small>
+            </div>
+    
+            <div class = "form-input">
+                <input type = "password" id = "password" placeholder="Password" required>
+                <small>Error message</small>
+            </div>
+            
+            <div class = "form-input">
+                <input type = "password" id = "password2" placeholder="Confirm Password" required>
+                <small>Error message</small>
+            </div>
+            
+            <div class = "form-input check-input">
+                <input type = "checkbox" id = "checkbox" required>
+                <p class = "check">I accept the <a href = "#">Terms Of Use</a> & <a href = "#">Privacy Policy</a></p>
+                <br>
+                <small>Error message</small>
+            </div>
+
+            <button>Sign Up</button>
+        </form>
+    </div>
+
+    <div class = "bottom">
+        <p>Already have an account? <a href = "login.html">Login here</a></p>
+    </div>
+    
+
+    <script src = "script.js"></script>
+    
+</body>
+</html>
