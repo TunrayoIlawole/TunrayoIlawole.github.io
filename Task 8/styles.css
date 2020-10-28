@@ -39,10 +39,6 @@ button {
     cursor: pointer;
 }
 
-input[type="text"] {
-    width: 97%;
-}
-
 .container {
     width: 60%;
     margin: 20px auto;
@@ -60,6 +56,10 @@ input[type="text"] {
     border: 1px solid #F0F0F0;
     border-radius: 5px;
     background-color: #ECECEC;
+}
+
+#first-name, #last-name {
+    width: 98%;
 }
 
 .text-input {
