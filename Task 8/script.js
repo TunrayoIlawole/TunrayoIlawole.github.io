@@ -124,3 +124,13 @@ const validInputs = [];
         }
     })
 });
+
+form.addEventListener('submit', function(e) {
+    // alert('Submitted');
+    e.preventDefault();
+    submit.innerHTML = `<div class="loader"></div>`;
+    setTimeout(function() {
+        submit.textContent = `Sign Up`;
+    }, 2000);
+    
+});
