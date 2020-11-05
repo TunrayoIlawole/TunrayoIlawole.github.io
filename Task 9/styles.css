@@ -1,0 +1,568 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Be Vietnam', sans-serif;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /* background-image: url('/images/bg-tablet-pattern.svg');
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: 80vh; */
+}
+
+h1 {
+    font-size: 5vw;
+    color: hsl(233, 12%, 13%);
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+    margin: 30px auto 60px;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mid-nav ul {
+    display: flex;
+    margin-top: 0;
+}
+
+.mid-nav ul li {
+    display: inline-block;
+    padding-right: 10px; 
+}
+
+.mid-nav ul li a {
+    color: #000;
+}
+
+.get-started {
+    display: inline-block;
+    background-color: hsl(12, 88%, 59%);
+    color: #FFF;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.nav-link-toggle {
+    display: none;
+}
+
+/**** Section Two *****/
+.one, .two {
+    padding-right: 60px;
+    padding-left: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 10px;
+    margin-bottom: 50px;
+}
+
+.one-left p, .two-left p {
+    max-width: 80%;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: hsl(227, 12%, 61%);
+}
+
+.one-left .get-started {
+    margin-bottom: 10px;
+}
+
+/****** Two ******/
+.item-no {
+    display: inline-block;
+    background-color: hsl(12, 88%, 59%);
+    color: #FFF;
+    padding: 5px 15px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.two-item p {
+    margin-left: 60px;
+    color: hsl(227, 12%, 61%);
+    text-justify: auto;
+}
+
+/***** Three ****/
+.three {
+    text-align: center;
+}
+
+.three h3 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    background-color: hsl(0, 0%, 98%);
+    text-align: center;
+    overflow: visible;
+    margin: 0 10px;
+}
+
+.card p {
+    color: hsl(227, 12%, 61%);
+    padding: 0 20px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.card-img {
+    display: inline-block;
+    width: 100px;
+    margin-top: -50px;
+}
+
+.three .get-started {
+    margin-top: 30px;
+}
+
+.carousel {
+    display: none;
+}
+
+
+/**** Four ****/
+.four {
+    background-color: hsl(12, 88%, 59%);
+    margin-top: 100px;
+    padding: 0 60px;
+}
+
+.four-con {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.four-con h3 {
+    color: #FFF;
+    max-width: 70%;
+}
+
+.four-con .get-started {
+    width: 150px;
+    align-self: center;
+    background-color: #FFF;
+    color: hsl(12, 88%, 59%);
+    text-align: center;
+    justify-self: flex-end;
+}
+
+
+/***** Footer *****/
+.main-footer {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 60px;
+    align-items: center;
+}
+
+.footer-links {
+    margin-top: 120px;
+}
+
+.footer-links a {
+    display: inline-block;
+    padding: 2px;
+}
+
+.footer-col ul li a {
+    display: block;
+    color: #FFF;
+    padding-bottom: 20px;
+
+}
+
+.updates {
+    display: flex;
+}
+
+.updates input {
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.updates button {
+    background-color: hsl(12, 88%, 59%);
+    color: #FFF;
+    padding: 10px 20px;
+}
+
+.updates input, .updates button {
+    border-radius: 15px;
+    border: 1px solid hsl(12, 88%, 59%);
+}
+
+.copy {
+    color: #FFF;
+    font-size: 0.9rem;
+    margin-top: 50px;
+}
+
+.alt-footer {
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    header, .one, .four, .two {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+    }
+
+    .mid-nav, .right-nav {
+        margin-top: 10px;
+        margin-left: 0;
+        display: none;
+    }
+
+    .nav-link-toggle {
+        display: initial;
+        align-self: flex-end;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    .nav-show {
+        width: 90%;
+        margin: 20px auto 0;
+        display: block;
+        text-align: center;
+        box-shadow: 2px 2px 2px 2px #000;
+    }
+
+    .nav-show ul {
+        display: block;
+    }
+
+    .nav-show ul li {
+        display: block;
+        margin: 20px 0;
+    }
+
+    .one {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        /* optional */
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        margin-right: 1%;
+    }
+
+    .one-left {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+
+    .one-right {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+
+    .two {
+        display: block;
+    }
+
+    .testimonials {
+        display: none;
+    }
+
+
+    /**** carousel ****/
+@keyframes tonext {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: 100%;
+    }
+    98% {
+      left: 100%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes tostart {
+    75% {
+      left: 0;
+    }
+    95% {
+      left: -300%;
+    }
+    98% {
+      left: -300%;
+    }
+    99% {
+      left: 0;
+    }
+  }
+  
+  @keyframes snap {
+    96% {
+      scroll-snap-align: center;
+    }
+    97% {
+      scroll-snap-align: none;
+    }
+    99% {
+      scroll-snap-align: none;
+    }
+    100% {
+      scroll-snap-align: center;
+    }
+  }
+
+    
+  .carousel::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .carousel::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .carousel::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: none;
+  }
+  
+  .carousel {
+    -ms-overflow-style: none;
+    display: block;
+  }
+  
+  ol, li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .carousel {
+    position: relative;
+    padding-top: 20%;
+    filter: drop-shadow(0 0 10px #0003);
+    perspective: 100px;
+    height: 200px;
+  }
+
+  .carousel_viewport {
+    position: absolute;
+    height: 150px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    counter-reset: item;
+    scroll-behavior: smooth;
+    /* scroll-snap-type: x mandatory; */
+  }
+  
+  .carousel_slide {
+    position: relative;
+    flex: 0 0 100%;
+    width: 100%;
+    counter-increment: item;
+  }
+
+  
+  .carousel_slide:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-40%,70px);
+    color: #fff;
+    font-size: 2em;
+  }
+  
+
+  .carousel:hover
+  .carousel:focus-within {
+    animation-name: none;
+  }
+  
+  .carousel__navigation {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+  }
+  
+  .carousel__navigation-list,
+  .carousel__navigation-item {
+    display: inline-block;
+  }
+  
+  .carousel__navigation-button {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: hsl(12, 88%, 59%);
+    background-clip: content-box;
+    border: 0.25rem solid transparent;
+    border-radius: 50%;
+    font-size: 0;
+    transition: transform 0.1s;
+  }
+
+  /**** Carousel end *****/
+
+  .four-con {
+      display: block;
+      text-align: center;
+      padding: 30px 0;
+  }
+
+  .four-con h3 {
+      max-width: 100%;
+  }
+
+    .main-footer {
+        display: none;
+    }
+
+    .alt-footer {
+        background-color: #000;
+        padding: 20px;
+        display: block;
+    }
+
+    .updates {
+        display: block;
+        width: 100%;
+    }
+
+    .updates input {
+        width: 80%;
+    }
+
+    .updates button {
+        width: 15%;
+    }
+
+    .footer-row {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-left ul li a, .footer-right ul li a {
+        display: block;
+        color: #FFF;
+        padding: 5px;
+    }
+
+    .footer-right ul {
+        margin-left: 70px;
+    }
+
+    .alt-footer-links, .footer-bottom {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .alt-footer-links a {
+        display: inline-block;
+        padding: 0 5%;
+    }
+
+    .footer-bottom {
+        color: #FFF;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .one {
+        text-align: center;
+    }
+
+    .one-left p {
+        max-width: 100%;
+    }
+
+    .updates input {
+        width: 60%;
+    }
+
+    .updates button {
+        width: 20%;
+    }
+
+    .footer-right ul {
+        margin-left: 0;
+    }
+
+    .alt-footer {
+        padding-left: 10px;
+        padding-right: 10px; 
+    }
+}
