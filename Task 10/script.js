@@ -1,5 +1,6 @@
 const domElements = {
     countries: document.querySelector('.countries-container'),
+    loader: document.querySelector('.loader'),
     flag: document.querySelector('.flag'),
     name: document.querySelector('.name'),
     capital: document.querySelector('.capital'),
@@ -24,7 +25,7 @@ const loader = `
 `;
 
 const getCountries = async function() {
-    domElements.countries.insertAdjacentHTML('afterbegin', loader);
+    domElements.loader.insertAdjacentHTML('afterbegin', loader);
 
     try {
         const result = await fetch(requestFile);
