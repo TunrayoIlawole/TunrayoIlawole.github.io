@@ -95,7 +95,7 @@ input {
       transform: rotate(360deg); }
 }
 
- @media screen and (max-width: 300px) {
+ @media screen and (max-width: 320px) {
     .container {
         width: 100%;
         padding: 0 10px;
