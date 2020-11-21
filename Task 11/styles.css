@@ -94,3 +94,31 @@ input {
     100% {
       transform: rotate(360deg); }
 }
+
+ @media screen and (max-width: 300px) {
+    .container {
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .item-container {
+        margin-bottom: 20px;
+    }
+
+    .number-container {
+        display: block;
+    }
+
+    .number {
+        margin-bottom: 10px;
+    }
+
+    .dial {
+        font-size: 0.9rem;
+    }
+ }
