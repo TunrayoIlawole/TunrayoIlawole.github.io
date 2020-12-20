@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "signup.css" />
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class = "desktop-nav">
+            <div class = "header-title">
+                <h1>
+                    <a href = "#">Go-To-Store</a>
+                </h1>
+            </div>
+    
+            <nav class = "right-nav">
+                <div class = "nav-link">
+                    <a href = "signup.html">sign up</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "#">sign in</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "#">make suggestion</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "#">suggestions</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class = "mobile-nav">
+            <div class = "main-mobile-nav">
+                <div class = "header-title">
+                    <h1>
+                        <a href = "#">Go-To-Store</a>
+                    </h1>
+                </div>
+                <div class = "nav-link nav-link-toggle">
+                    <svg height="24" class="octicon octicon-three-bars" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M1 2.75A.75.75 0 011.75 2h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 2.75zm0 5A.75.75 0 011.75 7h12.5a.75.75 0 110 1.5H1.75A.75.75 0 011 7.75zM1.75 12a.75.75 0 100 1.5h12.5a.75.75 0 100-1.5H1.75z"></path></svg>
+                </div>
+            </div>
+            <div class = "mobile-links">
+                <div class = "nav-link">
+                    <a href = "signup.html">sign up</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "#">sign in</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "#">make suggestion</a>
+                </div>
+                <div class = "nav-link">
+                    <a href = "#">suggestions</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class = "container">
+        <div class = "left-overlay">
+            <div class = "top">
+                <h2>Log In</h2>
+                <!-- <p>Please fill in this form to create an account</p> -->
+            </div>
+    
+            <form id = "form">
+                <div class = "form-input2">
+                    <input type = "email" class = "input" id = "email" name = "email" placeholder="Email" required>
+                    <small>Error message</small>
+                </div>
+                <div class = "form-input2">
+                    <input type = "password" class = "input" id = "password" name = "password" placeholder="Password" required>
+                    <small>Error message</small>
+                </div>
+    
+                <button class = "btn sign-up">Login</button>
+            </form>
+
+            <div class = "bottom">
+                <p>Don't have an account? <a href = "signup.html">Sign up here</a></p>
+            </div>
+        </div>
+
+        <div class = "right-overlay">
+
+        </div>
+        
+    </div>
+
+    <script src = "script.js"></script>
+    <script src = "login.js"></script>
+</body>
+</html>
