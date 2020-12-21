@@ -68,3 +68,14 @@ const fetchSuggestions = (category = '') => {
 
       });
 };
+
+domElements5.categoryCon.addEventListener('change', () => {
+    console.log(domElements5.categoryCon.value);
+    domElements5.itemsCon.innerHTML = '';
+
+    if (domElements5.categoryCon.value !== "Select Category"){
+        fetchSuggestions(`/${domElements5.categoryCon.value}`);
+    } else {
+        fetchSuggestions();
+    }
+});
