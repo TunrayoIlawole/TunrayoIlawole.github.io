@@ -22,7 +22,7 @@
                 <div class = "nav-link">
                     <a href = "#">sign in</a>
                 </div>
-                <div class = "nav-link">
+                <div class = "nav-link active">
                     <a href = "#">make suggestion</a>
                 </div>
                 <div class = "nav-link">
@@ -49,7 +49,7 @@
                 <div class = "nav-link">
                     <a href = "#">sign in</a>
                 </div>
-                <div class = "nav-link">
+                <div class = "nav-link active">
                     <a href = "#">make suggestion</a>
                 </div>
                 <div class = "nav-link">
@@ -68,15 +68,15 @@
     
             <form id = "form">
                 <div class = "form-input2">
-                    <input type = "text" class = "input" id = "item-name" name = "item-name" placeholder="Enter an item name" required>
+                    <input type = "text" class = "input" id ="item_name" name = "item_name" placeholder="Enter an item name" required>
                     <small>Error message</small>
                 </div>
                 <div class = "form-input2">
-                    <input type = "text" class = "input" id = "item-description" name = "item-description" placeholder="Describe the item" required>
+                    <input type = "text" class = "input" id = "item_description" name = "item_description" placeholder="Describe the item" required>
                     <small>Error message</small>
                 </div>
                 <div class = "form-input2">
-                    <input type = "text" class = "input" id = "item-category" name = "item-category" placeholder="What is the item's category" required>
+                    <input type = "text" class = "input" id = "item_category" name = "item_category" placeholder="What is the item's category" required>
                     <small>Error message</small>
                 </div>
                 <div class = "form-input2">
@@ -100,6 +100,8 @@
 
 
     <script src = "script.js"></script>
-    <script src = "get-sug.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "api.js"></script>
+    <script src = "make-sug.js"></script>
 </body>
 </html>
