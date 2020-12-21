@@ -32,6 +32,17 @@ function checkText(input) {
     }
 }
 
+function checkCap(input) {
+    if(input.value[0] === input.value[0].toLowerCase()) {
+        showError(input, 'First letter of category must be uppercase');
+        return false;
+    }
+    else {
+        showSuccess(input);
+        return true;
+    }
+}
+
 
 let validInputs = [];
 
@@ -41,6 +52,10 @@ let validInputs = [];
             let isValid;
             if (input.type === 'text') {
                 isValid = checkText(input);
+            }
+
+            if (input === domElements4.itemCategory) {
+                isValid = checkCap(input);
             }
 
 
