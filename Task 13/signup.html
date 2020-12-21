@@ -14,19 +14,19 @@
                     <a href = "#">Go-To-Store</a>
                 </h1>
             </div>
-    
+
             <nav class = "right-nav">
-                <div class = "nav-link">
+                <div class = "nav-link active">
                     <a href = "signup.html">sign up</a>
                 </div>
                 <div class = "nav-link">
-                    <a href = "#">sign in</a>
+                    <a href = "login.html">sign in</a>
                 </div>
                 <div class = "nav-link">
-                    <a href = "#">make suggestion</a>
+                    <a href = "make-suggestion.html">make suggestion</a>
                 </div>
                 <div class = "nav-link">
-                    <a href = "#">suggestions</a>
+                    <a href = "get-sug.html">suggestions</a>
                 </div>
             </nav>
         </div>
@@ -43,7 +43,7 @@
                 </div>
             </div>
             <div class = "mobile-links">
-                <div class = "nav-link">
+                <div class = "nav-link active">
                     <a href = "signup.html">sign up</a>
                 </div>
                 <div class = "nav-link">
@@ -65,10 +65,10 @@
                 <h2>Sign Up</h2>
                 <!-- <p>Please fill in this form to create an account</p> -->
             </div>
-    
+
             <form id = "form">
                 <div class = "form-input">
-                    <input type = "text" class = "input" id = "full-name" name = "full-name" placeholder = "Full Name" required>
+                    <input type = "text" class = "input" id = "fullname" name = "fullname" placeholder = "Full Name" required>
                     <small>Error message</small>
                 </div>
                 <div class = "form-input">
@@ -76,7 +76,7 @@
                     <small>Error message</small>
                 </div>
                 <div class = "form-input">
-                    <input type = "tel" class = "input" id = "tel-num" name = "tel-num" placeholder="Telephone Number" required>
+                    <input type = "tel" class = "input" id = "mobile-number" name = "mobile-number" placeholder="Telephone Number" required>
                     <small>Error message</small>
                 </div>
                 <div class = "form-input">
@@ -96,7 +96,7 @@
                         <input type = "password" class = "input" id = "password" name = "password" placeholder="Password" required>
                         <small>Error message</small>
                     </div>
-                    
+
                     <div class = "form-input">
                         <input type = "password" class = "input" id = "password2" placeholder="Confirm Password" required>
                         <small>Error message</small>
@@ -108,7 +108,7 @@
                     <br>
                     <small>Error message</small>
                 </div>
-    
+
                 <button class = "btn sign-up">Sign Up</button>
             </form>
 
@@ -120,11 +120,13 @@
         <div class = "right-overlay">
 
         </div>
-        
+
     </div>
-    
+
 
     <script src = "script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src = "api.js"></script>
     <script src = "signup.js"></script>
 </body>
 </html>
