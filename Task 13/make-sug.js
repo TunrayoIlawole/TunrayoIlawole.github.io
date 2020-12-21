@@ -1,10 +1,8 @@
-// const axios = require('axios');
-
 const domElements4 = {
     form: document.querySelector('form'),
-    itemName: document.getElementById('item-name'),
-    itemDesc: document.getElementById('item-description'),
-    itemCategory: document.getElementById('item-category'),
+    itemName: document.getElementById('item_name'),
+    itemDesc: document.getElementById('item_description'),
+    itemCategory: document.getElementById('item_category'),
     reason: document.getElementById('reason'),
     submit: document.querySelector('button')
 }
@@ -82,29 +80,14 @@ domElements4.form.addEventListener('submit', function(e) {
 
     console.log(values);
 
-    fetch('https://jsminnastore.herokuapp.com/suggest', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-          },
-        body: JSON.stringify(values),
-    })
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-    })
-    .catch(function(error) {
+    window.makeRequest.post('/suggest', values)
+      .then((response) => {
+        console.log(response);
+        console.log('redirect to suggestions page');
+        window.location.replace('get-sug.html');
+      })
+      .catch(function (error) {
         console.log('Request failed', error);
-    });
-
-    // axios.post(
-    //     'https://jsminnastore.herokuapp.com/suggest',
-    //     values,
-    // )
-    // .then(() => {
-    //     alert('success');
-    // })
-    // .catch(() => {
-    //     alert('error');
-    // })
+      });
+  
 });
