@@ -11,9 +11,6 @@ const domElements2 = {
     submit: document.querySelector('.sign-up')
   };
   
-  
-  console.log(domElements2)
-  
   function showSuccess(input) {
     const formInput = input.parentElement;
     // formInput.classList.add('success');
